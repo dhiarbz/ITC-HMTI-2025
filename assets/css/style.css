@@ -1,0 +1,395 @@
+
+* {
+    font-family: oxanium;
+    overflow-x: hidden;
+  }
+.navbar{
+    background-color: #fff;
+}
+.navbar-brand .logo{
+    height: 50px;
+    width: auto;
+}  
+
+.navbar-nav .nav-link {
+  font-size: 16px;
+  color: #333;
+  transition: color 0.3s;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #4d79ff;
+}
+
+.hero {
+    height: 100vh;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: url(/assets/image/FRAME_1.png) no-repeat center center;
+    background-size: cover;
+  }
+  
+  .hero .bg-primary {
+    font-size: 20px;
+  }
+  
+  .daftar{
+    background: linear-gradient(to right, #D478AE, #8E85D3, #4893F8);
+    border: none;
+    padding: 10px 20px;
+    color: white;
+    font-size: 14px;
+    border-radius: 8px;
+    cursor: pointer;
+    text-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+    transition: background 0.3s ease;
+  }
+
+  .daftar:hover{
+    background: linear-gradient(to right, #5d8fff, #a06bff);
+  }
+  .countdown {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+  }
+
+  .countdown .time-box {
+    background: linear-gradient(to bottom right, #4d79ff, #2d6ff7);
+    margin: 0 10px;
+    padding: 10px 20px;
+    border-radius: 8px;
+    text-align: center;
+    color: white;
+  }
+
+  .countdown .time-box span {
+    font-size: 32px;
+    display: block;
+  }
+
+  .cta-button {
+    background: linear-gradient(to right, #4d79ff, #964dff);
+    border: none;
+    padding: 10px 20px;
+    color: white;
+    font-size: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    text-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+    transition: background 0.3s ease;
+  }
+
+  .cta-button:hover {
+    background: linear-gradient(to right, #5d8fff, #a06bff);
+  }
+  .hero .container{
+    z-index:1;
+  }
+  
+  .building-left img{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 500px;
+    height: 300px;
+    translate: -120px;
+    Z-index:1;
+  }
+  
+  /* Gedung di kanan */
+  .building-right img{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 500px;
+    height: 300px;
+    translate: 120px;
+    z-index:1;
+  }
+  .meteor-kanan img{
+    position: absolute;
+    top: 100px;
+    right: 0;
+    z-index: 0;
+    overscroll: hidden !important;
+  }
+
+  .bintang-atas img{
+    position: absolute;
+    top: 120px;
+    left: 0;
+    width: 600px;
+    height: 300px;
+  }
+
+  .bintang-bawah img{
+    position: absolute;
+    top: 370px;
+    left: 0;
+    width: 600px;
+    height: 300px;
+  }
+
+  
+  .about {
+    background: url('/assets/image/FRAME_2.png') no-repeat center center;
+    background-size: cover;
+    color: white;
+    padding: 100px 20px;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    overflow: hidden !important;
+    margin: 0 auto;
+    position: relative;
+  }
+  .about .kota {
+    background: url('/assets/image/kota.png') no-repeat center center;
+    background-size: cover;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 200px;
+    position: absolute;
+    z-index:0;
+  }
+
+  .kotak-background{
+    background: url(/assets/image/kotak-tentang.png) no-repeat center center;
+    background-size: contain;
+    padding: 40px;
+    justify-content: center;
+    background-position: center center;
+    display: flex;
+    color: white; 
+    width: 100%;
+    z-index:1;
+    font-size: 24px; 
+    height: 500px;
+    border-radius: 8px; 
+    text-align: justify; 
+    overflow-y: hidden;
+    }
+    
+    .text {
+    font-size: 22px;
+    color: #fff;
+    text-align: justify;
+    top: 5%;
+    padding: 10%;
+    word-wrap: break-word;
+    z-index: 2;
+    overflow-y: hidden;
+
+    }
+
+    @media (max-width: 768px) {
+      .kotak-background {
+        font-size: 20px;
+        padding: 15px;
+        overflow-y: hidden;
+      }
+      .kotak-background img{
+        height: 35em;
+        overflow-y: hidden;
+      }
+    }
+    @media (min-width: 993px) {
+      .kotak-background {
+        font-size: 15px;
+        padding: 15px;
+        overflow-y: hidden;
+      }
+      .kotak-background img{
+        height: 40em;
+        overflow-y: hidden;
+      }
+    }
+    @media (min-width: 768px) {
+      .kotak-background {
+        font-size: 25px;
+        padding: 15px;
+        overflow-y: hidden !important;
+      }
+      .kotak-background img{
+        height: 28em;
+      }
+    }
+    @media (max-width: 480px) {
+      .kotak-background {
+        font-size: 14px;
+        padding: 10px;
+      }
+      .text {
+        top: 2%;
+      }
+    }
+  
+
+  .cat{
+    background: url(/assets/image/FRAME_3.png) no-repeat center center;
+    background-size: cover;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+  }
+
+  .cat .kategori-judul{
+    font-family: "Oxanium", sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    position: relative;
+    justify-content: center;
+    color: #fff;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    z-index: 1 !important;
+    text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5);
+    margin-top: 90px;
+  }
+
+  .kategori1 {
+    background: url(/assets/image/kotak-kiri.png) no-repeat center center;
+    background-size: contain;
+    padding: 40px;
+    justify-content: center;
+    background-position: center center;
+    display: flex;
+    color: white; 
+    font-size: 24px; 
+    height: 500px;
+    border-radius: 8px; 
+    text-align: justify; 
+    overflow-y: hidden;
+    z-index: 1 !important;
+  }
+
+  .isikategori1{
+    height: 500px;
+    overflow: hidden;
+  }
+  
+  .judul-kategori{
+    font-size: larger;
+    font-weight: bold;
+  }
+
+  .gambar-web-design{
+    justify-content: center;
+    margin-bottom: 10px;
+    padding-left: 20px;
+    overflow: hidden;
+  }
+
+  .button-container{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-left:  58px;
+    justify-content: center;
+  }
+  
+  .button-juklakjuknis img {
+    display: block; 
+    width: 200px; 
+    height: auto; 
+    cursor: pointer;
+    border: none; 
+  }
+
+  .button-juklakjuknis img:hover {
+    opacity: 0.8; 
+    transform: scale(1.05);
+    transition: all 0.3s ease; 
+  }
+
+  .kategori2 {
+    background: url(/assets/image/kotak-kanan.png) no-repeat center center;
+    background-size: contain;
+    padding: 40px;
+    justify-content: center;
+    background-position: center center;
+    display: inline-block;
+    color: white; 
+    height: 500px;
+    overflow-y: hidden;
+    font-size: 24px; 
+    border-radius: 8px; 
+    text-align: justify; 
+    z-index: 1;
+  }
+  .kategori2 .button-container{
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-left: 210px;
+    justify-content: center;
+  }
+  .kota-balik {
+    background: url('/assets/image/kota-balik.png') no-repeat center center;
+    background-size: cover;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 200px;
+    position: absolute;
+    z-index: 0;
+    transform: scaleX(-1);
+  }
+
+  .cat .titik{
+      background: url('/assets/image/titik.png') no-repeat center center;
+      background-size: cover;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 500px;
+      position: absolute;
+      z-index: 0;
+    }
+
+  .timeline{
+    background: url(/assets/image/FRAME_4.png) no-repeat center center;
+    background-size: cover;
+    height: 100vh;
+  }
+
+  .gallery{
+    background: url(/assets/image/FRAME_5.png) no-repeat center center;
+    background-size: cover;
+    height: 100vh;
+  }
+
+  .sponsor{
+    background: url(/assets/image/FRAME_6.png) no-repeat center center;
+    background-size: cover;
+    height: 100vh;
+  }
+
+  @media (max-width: 1194px){
+    .building-left{
+      display: none !important;
+    }
+    .building-right{
+      display: none !important;
+    }
+    .meteor-kanan {
+      display: none !important;
+    }
+    .bintang-atas{
+      display: none !important;
+    }
+    .bintang-bawah{
+      display: none !important;
+    }
+  }
