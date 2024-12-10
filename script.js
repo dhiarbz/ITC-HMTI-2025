@@ -1,6 +1,6 @@
 // Countdown Timer Logic
 const countdown = () => {
-    const targetDate = new Date('Dec 31, 2024 23:59:59').getTime();
+    const targetDate = new Date('Jan 23, 2025 23:59:59').getTime();
     const now = new Date().getTime();
     const gap = targetDate - now;
   
