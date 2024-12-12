@@ -7,6 +7,9 @@
   <link rel="stylesheet" href="assets/css/style.css">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Oxanium:wght@200..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 </head>
 <body>
   <nav class="navbar navbar-expand-md navbar-light bg-white">
@@ -44,18 +47,9 @@
     </div>
     <section class="hero text-center text-white d-flex flex-column justify-content-center align-items-center" style="overflow-x: hidden;">
       <div class="container">
-        <svg width="500" height="100" xmlns="http://www.w3.org/2000/svg">
-          <defs>
-            <linearGradient id="gradientStroke" x1="0%" y1="0%" x2="100%" y2="0%">
-              <stop offset="0%" style="stop-color: rgba(212,120,174,1); stop-opacity:1" />
-              <stop offset="50%" style="stop-color: rgba(142,133,211,1); stop-opacity:1" />
-              <stop offset="100%" style="stop-color: rgba(72,147,248,1); stop-opacity:1" />
-            </linearGradient>
-          </defs>
-          <text x="125" y="70" font-size="60" font-weight="bold" fill="white" stroke="url(#gradientStroke)" stroke-width="3">
-            ITC 2025
-          </text>
-        </svg>
+        <div class="about-text">
+          ITC 2025
+        </div>
         <p class="lead">INFORMATION TECHNOLOGY COMPETITION</p>
         <p class="mb-4">Innovating for a Sustainable Future</p>
         <div class="countdown">
@@ -100,19 +94,8 @@
     <section id="tentang" class="about py-5 text-center text-white">
       <div class="container">
         <div class="row">
-          <div class="col-12 mb-4">
-            <svg width="700" height="100" xmlns="http://www.w3.org/2000/svg">
-              <defs>
-                <linearGradient id="gradientStroke" x1="0%" y1="0%" x2="100%" y2="0%">
-                  <stop offset="0%" style="stop-color: rgba(212,120,174,1); stop-opacity:1" />
-                  <stop offset="50%" style="stop-color: rgba(142,133,211,1); stop-opacity:1" />
-                  <stop offset="100%" style="stop-color: rgba(72,147,248,1); stop-opacity:1" />
-                </linearGradient>
-              </defs>
-                <text x="50%" y="70" font-size="60" font-weight="bold" fill="white" stroke="url(#gradientStroke)" stroke-width="3" text-anchor="middle">
-                TENTANG ITC 2025
-                </text>
-            </svg>
+          <div class="about-text col-12 mb-4">
+            TENTANG ITC 2025
           </div>
           <div class="container">
           <div class="col-12 col-md-8 mx-auto d-flex justify-content-center">
@@ -136,37 +119,34 @@
     
     <section id="kategori" class="cat ">
       <div class="container kategori-judul">
-        <svg width="800" height="100" xmlns="http://www.w3.org/2000/svg">
-              <defs>
-                <linearGradient id="gradientStroke" x1="0%" y1="0%" x2="100%" y2="0%">
-                  <stop offset="0%" style="stop-color: rgba(212,120,174,1); stop-opacity:1" />
-                  <stop offset="50%" style="stop-color: rgba(142,133,211,1); stop-opacity:1" />
-                  <stop offset="100%" style="stop-color: rgba(72,147,248,1); stop-opacity:1" />
-                </linearGradient>
-              </defs>
-                <text x="50%" y="70" font-size="60" font-weight="bold" fill="white" stroke="url(#gradientStroke)" stroke-width="3" text-anchor="middle">
-                KATEGORI PERLOMBAAN
-                </text>
-            </svg>
+        <div class="about-text">
+          KATEGORI PERLOMBAAN
+        </div>
       </div>
 
       <div class="container kategori-kolom my-5">
         <div class="row flex-column flex-lg-row">
           <div class="col mb-5">
-            <div class="kartu position-relative">
+            <div class="kartu position-relative d-flex justify-content-center">
               <img src="assets/image/kotak-kiri.png" alt="..." class="img-fluid mb-3">
-              <div class="text d-flex flex-column align-items-center">
-                <img src="assets/image/gambar-kiri.png" alt="" srcset="" width="500" class="img-fluid mb-3">
-                <span></span>
+              <div class="text d-flex flex-column align-items-center justify-content-center">
+                <span class="kategori-judul">WEB DESIGN</span>
+                <img src="assets/image/gambar-kiri.png" alt="" srcset="" width="400" class="img-fluid mb-3">
+                <a href="http://" class="btn">
+                  <img src="assets/image/button_daftar.svg" alt="" class="img-fluid" srcset="">
+                </a>
               </div>
             </div>
           </div>
           <div class="col">
-            <div class="kartu position-relative">
+            <div class="kartu position-relative d-flex justify-content-center">
               <img src="assets/image/kotak-kanan.png" class="img-fluid" alt="...">
                 <div class="text d-flex flex-column align-items-center">
-                <img src="assets/image/gambar-kanan.png" alt="" srcset="" width="400" class="img-fluid mb-3">
-                <span></span>
+                  <span class="kategori-judul">WEB DEVELOPMENT</span>
+                  <img src="assets/image/gambar-kanan.png" alt="" srcset="" width="300" class="imgwebdev img-fluid mb-3">
+                  <a href="http://" class="btn">
+                    <img src="assets/image/button_daftar.svg" alt="" class="img-fluid" srcset="">
+                  </a>
                 </div>
             </div>
           </div>
@@ -174,21 +154,40 @@
       </div>
       <div class="titik"></div>
     </section>
-
+      
     <section id="timeline" class="timeline text-center text-white d-flex flex-column align-items-center py-5" style="overflow-x: hidden;">
       <div class="container">
-        <svg width="800" height="100" xmlns="http://www.w3.org/2000/svg">
-              <defs>
-                <linearGradient id="gradientStroke" x1="0%" y1="0%" x2="100%" y2="0%">
-                  <stop offset="0%" style="stop-color: rgba(212,120,174,1); stop-opacity:1" />
-                  <stop offset="50%" style="stop-color: rgba(142,133,211,1); stop-opacity:1" />
-                  <stop offset="100%" style="stop-color: rgba(72,147,248,1); stop-opacity:1" />
-                </linearGradient>
-              </defs>
-              <text x="50%" y="70" font-size="60" font-weight="bold" fill="white" stroke="url(#gradientStroke)" stroke-width="3" text-anchor="middle">
-              TIMELINE
-              </text>
-        </svg>
+        <div class="about-text col-12 mb-4">
+          TIMELINE
+        </div>
+      </div>
+      <div class="main-container">
+        <ul>
+          <li>
+            <h3 class="heading">PENDAFTARAN</h3>
+            <p>10 Desember 2024 - 12 Januari 2025</p>
+          </li>
+          <li>
+            <h3 class="heading">PENGUMPULAN PROPOSAL DAN DEMO</h3>
+            <p>10 Desember 2024 - 14 Januari 2025</p>
+          </li>
+          <li>
+            <h3 class="heading">PENILAIAN PROPOSAL DAN DEMO</h3>
+            <p>15 - 16 Januari 2025</p>
+          </li>
+          <li>
+            <h3 class="heading">PENGUMUMAN FINALIS</h3>
+            <p>17 Januari 2025</p>
+          </li>
+          <li>
+            <h3 class="heading">TECHNICAL MEETING</h3>
+            <p>18 Januari 2025</p>
+          </li>
+          <li>
+            <h3 class="heading">PELAKSANAAN LOMBA</h3>
+            <p>23    Januari 2025</p>
+          </li>
+        </ul>
       </div>
       <div class="awan-kanan">
         <img src="/assets/image/awan-kanan.png" alt="" width="350px">
@@ -200,21 +199,12 @@
         <img src="/assets/image/awan-kanan-bawah.png" alt="" width="350px">
       </div>
     </section>
-
+    
     <section id="galeri" class="gallery py-5 text-center text-white">
     <div class="container">
-      <svg width="800" height="100" xmlns="http://www.w3.org/2000/svg">
-            <defs>
-              <linearGradient id="gradientStroke" x1="0%" y1="0%" x2="100%" y2="0%">
-                <stop offset="0%" style="stop-color: rgba(212,120,174,1); stop-opacity:1" />
-                <stop offset="50%" style="stop-color: rgba(142,133,211,1); stop-opacity:1" />
-                <stop offset="100%" style="stop-color: rgba(72,147,248,1); stop-opacity:1" />
-              </linearGradient>
-            </defs>
-              <text x="50%" y="70" font-size="60" font-weight="bold" fill="white" stroke="url(#gradientStroke)" stroke-width="3" text-anchor="middle">
-              GALLERY
-              </text>
-        </svg>
+      <div class="about-text col-12 mb-4">
+        GALLERY
+      </div>
     </div>
     <div class="container d-flex justify-content-center">
       <div class="carousel-container">
@@ -243,53 +233,35 @@
 
     <section id="sponsor" class="sponsor py-5 text-center text-white">
       <div class="container sponsor-text">
-        <svg width="800" height="100" xmlns="http://www.w3.org/2000/svg" class="s-text">
-          <defs>
-            <linearGradient id="gradientStroke" x1="0%" y1="0%" x2="100%" y2="0%">
-              <stop offset="0%" style="stop-color: rgba(212,120,174,1); stop-opacity:1" />
-              <stop offset="50%" style="stop-color: rgba(142,133,211,1); stop-opacity:1" />
-              <stop offset="100%" style="stop-color: rgba(72,147,248,1); stop-opacity:1" />
-            </linearGradient>
-          </defs>
-            <text x="50%" y="60" font-size="60" font-weight="bold" fill="white" stroke="url(#gradientStroke)" stroke-width="3" text-anchor="middle" >
-            SPONSORSHIP
-            </text>
-        </svg>
+        <div class="about-text col-12 mb-4">
+          SPONSORED BY
+        </div>
       </div>
 
       <div class="slider">
         <div class="slide-track">
           <div class="slide">
-            <img src="/assets/image/ITC logo 2.png" alt="" width="250">
+            <img src="/assets/image/ITC logo 2.png" alt="" width="200">
           </div>
           <div class="slide">
-            <img src="/assets/image/ITC logo 2.png" alt="" width="250">
+            <img src="/assets/image/ITC logo 2.png" alt="" width="200">
           </div>
           <div class="slide">
-            <img src="/assets/image/ITC logo 2.png" alt="" width="250">
+            <img src="/assets/image/ITC logo 2.png" alt="" width="200">
           </div>
           <div class="slide">
-            <img src="/assets/image/ITC logo 2.png" alt="" width="250">
+            <img src="/assets/image/ITC logo 2.png" alt="" width="200">
           </div>
         </div>
       </div>
 
       <div class="container">
-        <svg width="800" height="100" xmlns="http://www.w3.org/2000/svg" class="s-text">
-          <defs>
-            <linearGradient id="gradientStroke" x1="0%" y1="0%" x2="100%" y2="0%">
-              <stop offset="0%" style="stop-color: rgba(212,120,174,1); stop-opacity:1" />
-              <stop offset="50%" style="stop-color: rgba(142,133,211,1); stop-opacity:1" />
-              <stop offset="100%" style="stop-color: rgba(72,147,248,1); stop-opacity:1" />
-            </linearGradient>
-          </defs>
-            <text x="50%" y="60" font-size="60" font-weight="bold" fill="white" stroke="url(#gradientStroke)" stroke-width="3" text-anchor="middle" >
-            MEDIA PARTNERS
-            </text>
-        </svg>
+        <div class="about-text col-12 mt-4">
+          MEDIA PARTNER
+        </div>
       </div>
       <div class="city-kiri">
-        <img src="/assets/image/city-kiri.png" alt="" width="300px">
+        <img src="/assets/image/city-kiri.png" alt="" width="320px">
       </div>
       <div class="city-kanan">
         <img src="/assets/image/city_kanan.png" alt="" width="320px">

@@ -120,6 +120,7 @@ color: #4d79ff;
   width: 500px;
   height: 300px;
   Z-index:1;
+  transform: translateX(-90px);
 }
 
 /* Gedung di kanan */
@@ -129,6 +130,7 @@ color: #4d79ff;
   width: 500px;
   height: 300px;
   z-index:1;
+  transform: translateX(90px);
 }
 .meteor-kanan img{
   position: absolute;
@@ -261,7 +263,7 @@ color: #4d79ff;
   position: relative;
 }
 
-.cat .kategori-judul{
+.kategori-judul{
   font-family: "Oxanium", sans-serif;
   font-size: 30px;
   font-weight: bold;
@@ -269,11 +271,9 @@ color: #4d79ff;
   position: relative;
   justify-content: center;
   color: #fff;
-  margin-top: 20px;
   margin-bottom: 20px;
   z-index: 1 !important;
   text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5);
-  margin-top: 90px;
 }
 
 .kategori1 {
@@ -380,17 +380,81 @@ color: #4d79ff;
     z-index: 0;
   }
 
-.timeline{
-  background: url('/assets/image/FRAME_4.png') no-repeat center center;
-  background-size: cover;
-  height: 1026px;
-  position: relative;
-  overflow: hidden !important;
-}
-
-.timeline .main-container{
-  overflow: hidden;
-}
+  .timeline{
+    background: url('/assets/image/FRAME_4.png') no-repeat center center;
+    background-size: cover;
+    height: 1026px;
+    position: relative;
+    overflow: hidden !important;
+    display: grid;
+  }
+  
+  .timeline .main-container{
+    overflow: hidden;
+    width: 65%;
+    height: auto;
+    margin: auto 0;
+    position: relative;
+    padding: 10px
+  }
+  
+  .main-container ul{
+    list-style: none;
+    overflow: hidden;
+    width: 100%;
+  }
+  
+  .main-container ul::after{
+    content: " ";
+    position: absolute;
+    width: 2px;
+    height: 100%;
+    left: 50%;
+    top: 0;
+    transform: translateX(-50%);
+    background-image: linear-gradient(to right, #FF55E8, #964dff);
+  }
+  .main-container ul li{
+    width: 300px;
+    padding: 15px 20px;
+    background-image: linear-gradient(to right, #00EDFF, #FF55E8);
+    box-shadow: 1px 1px 25px #FF55E8;
+    border-radius: 20px;
+    margin-bottom: 30px;
+    position: relative;
+    color: #fff;
+    z-index: 2;
+  }
+  
+  .main-container ul li:nth-child(4) {
+    margin-bottom: 0;
+  }
+  
+  .main-container ul li:nth-child(odd){
+    float: left;
+    clear: right;
+    transform: translateX(140px) translateY(10px);
+    text-align: left;
+  }
+  
+  .main-container ul li:nth-child(even){
+    float: right;
+    clear: left;
+    text-align: right;
+    transform: translateX(-170px) translateY(10px);;
+  }
+  
+  ul li p{
+    font-size: 15px;
+    color: #fff;
+    margin: 6px 0 4px 0;
+    line-height: 25px;
+  }
+  
+  ul li .heading {
+    font-size: 17px;
+    color: #fff;
+  }
 
 .awan-kanan img{
   position: absolute;
@@ -414,10 +478,62 @@ color: #4d79ff;
   overflow: hidden !important;
 }
 
+@media only screen and (min-width:798px) and (max-width: 1100px) {
+	.timeline .main-container{
+		width: 80%;
+    text-align: center;
+	}
+}
+
+@media only screen and (max-width: 798px) {
+  .timeline{
+    height: auto;
+    padding: 20px;
+  }
+	.timeline .main-container{
+		width: 100%;
+		padding: 10px;
+	}
+	.timeline .main-container ul::after{
+		left: -40px;
+	}
+	.timeline .main-container ul li {
+		width: 100%;
+		float: none;
+		clear: none;
+    padding: 10px;
+		margin-bottom: 20px;
+	}
+	.timeline .main-container ul li:nth-child(odd) {
+    float: none;
+    clear: none;
+    transform: none;
+		text-align: left;
+	}
+	.timeline .main-container ul li:nth-child(even) {
+		transform: translateX(0px);
+    float: none;
+    clear: none;
+    text-align: left;
+	}
+  .awan-kanan img, .awan-kiri img, .awan-kanan-bawah img {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+	.timeline .main-container{
+		width: 80%;
+    justify-content: center;
+	}
+	.timeline .main-container ul::after{
+		left: -20px;
+	}
+}
+
 .gallery{
   background: url('/assets/image/FRAME_5.png') no-repeat center center;
   background-size: cover;
-  height: 1026px;
   overflow-y: hidden !important;
   align-items: center;
   justify-content: center;
@@ -481,10 +597,8 @@ color: #4d79ff;
   }
 }
 .slider{
-  margin: 10px;
   overflow: hidden;
   position: relative;
-  width: auto;
 }
 
 .slider .slide-track{
@@ -515,7 +629,7 @@ color: #4d79ff;
   right: 0;
   z-index: 1;
   overflow: hidden !important;
-  transform: translateY(40px) !important;
+  transform: translateY(10) !important;
 }
 @media (max-width: 1194px){
   .awan-kiri{
@@ -679,7 +793,28 @@ color: #4d79ff;
   .bintang-atas{
     display: none !important;
   }
-  .bintang-bawah{
+  .bintang-bawah {
     display: none !important;
+  }
+}
+.about-text{
+  font-size: 3rem;
+  font-family: "Oxanium", sans-serif;
+  -webkit-text-stroke-width: 5px;
+	-webkit-text-stroke-color: transparent;
+  display: inline-block;
+  font-optical-sizing: auto;
+  font-weight: 800;
+  font-style: normal;
+  background: -moz-linear-gradient(180deg, rgba(133,58,115,1) 0%, rgba(51,32,149,1) 35%, rgba(130,193,226,1) 100%);
+  background: -webkit-linear-gradient(180deg, rgba(133,58,115,1) 0%, rgba(51,32,149,1) 35%, rgba(130,193,226,1) 100%);
+  background: linear-gradient(180deg, rgba(133,58,115,1) 0%, rgba(51,32,149,1) 35%, rgba(130,193,226,1) 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#853a73",endColorstr="#82c1e2",GradientType=1);
+}
+@media (max-width: 768px) {
+  .imgwebdev{
+    width: 10rem;
   }
 }
