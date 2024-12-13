@@ -11,18 +11,9 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Oxanium:wght@200..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-  <script src="http://code.jquery.com/jquery-2.2.1.min.js"></script>
 </head>
 <body>
-  <div class="wrapperanimate">
-    <div class="circle"></div>
-    <div class="circle"></div>
-    <div class="circle"></div>
-    <div class="shadow"></div>
-    <div class="shadow"></div>
-    <div class="shadow"></div>
-    <span>Loading</span>
-</div>
+  <div class="loader"></div>
   <nav class="navbar navbar-expand-md navbar-light bg-white">
     <div class="container">
       <a class="navbar-brand" href="#">
@@ -52,7 +43,7 @@
   </nav>
     <div class="floating-button">
       <a href="https://drive.google.com/drive/folders/1-1PzINb7Exo13VYBKC_g9UINX28EflgH?usp=sharing">
-        <img src="{{ asset('/assets/image/floating.svg') }}" alt="" width="250px">
+        <img src="{{ asset('/assets/image/floating.svg') }}" alt="">
       </a>
     </div>
     <section class="hero text-center text-white d-flex flex-column justify-content-center align-items-center" style="overflow-x: hidden;">
@@ -179,11 +170,11 @@
           </li>
           <li>
             <h3 class="heading">PENGUMPULAN PROPOSAL DAN DEMO</h3>
-            <p>10 Desember 2024 - 14 Januari 2025</p>
+            <p>10 Desember 2024 - 13 Januari 2025</p>
           </li>
           <li>
             <h3 class="heading">PENILAIAN PROPOSAL DAN DEMO</h3>
-            <p>15 - 16 Januari 2025</p>
+            <p>14 - 16 Januari 2025</p>
           </li>
           <li>
             <h3 class="heading">PENGUMUMAN FINALIS</h3>
@@ -285,9 +276,6 @@
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <script>
-      $(document).ready(function(){
-      $(".preloader").fadeOut();
-      })
 
       // Countdown Timer Logic
       const countdown = () => {
@@ -317,6 +305,18 @@
       
       // Refresh countdown every second
       setInterval(countdown, 1000);
+
+      //preloader
+      window.addEventListener("load", () => {
+  const loader = document.querySelector(".loader");
+
+  loader.classList.add("loader--hidden");
+
+  loader.addEventListener("transitionend", () => {
+    document.body.removeChild(loader);
+  });
+});
+
       </script>
 </body>
 </html>
