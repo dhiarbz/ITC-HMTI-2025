@@ -3,7 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>ITC</title>
+  <title>IT Competition 2025</title>
+  <link rel="icon" href="{{ asset('assets/images/ITC logo 2.png') }}" type="image/x-icon">
   <link rel="stylesheet" href="{{ asset('assets/css/style.css') }}">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
@@ -258,7 +259,7 @@
           <img src="{{ asset('/assets/image/city-kiri.png') }}" alt="" width="320px">
         </div>
         <div class="city-kanan">
-          <img src="{{ asset('/assets/image/city-kanan.png') }}" alt="" width="320px">
+          <img src="{{ asset('/assets/image/city_kanan.png') }}" alt="" width="320px">
         </div>
         <div class="bintang"></div>
       </section>
